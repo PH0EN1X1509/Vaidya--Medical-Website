@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="loginstyles.css" />
+    <title>Login Page</title>
+  </head>
+  <body>
+    <div class="container" id="container">
+      <div class="form__container signup__container">
+        <form action="/login.html" method="post">
+          <h1>Create Account</h1>
+          <div class="socials">
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+            <a href="#"><i class="ri-google-fill"></i></a>
+            <a href="#"><i class="ri-linkedin-fill"></i></a>
+          </div>
+          <span>or use your email for registration</span>
+          <div class="form__group">
+            <input type="text" name="usernamev" placeholder="Username" />
+          </div>
+          <div class="form__group">
+            <input type="email" name="email" placeholder="Email" />
+          </div>
+          <div class="form__group">
+            <input type="password" name="passwordv" placeholder="Password" />
+          </div>
+          <div class="form__group">
+            <input type="date" class="date" name="dob" placeholder="Date of birth"/>
+          </div>
+          <button><a href="register.html" style="color: white; text-decoration: none;">Sign up</a></button>
+        </form>
+      </div>
+      <div class="form__container signin__container">
+        <form action="/login.html" method="post">
+          <h1>Sign in</h1>
+          <div class="socials">
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+            <a href="#"><i class="ri-google-fill"></i></a>
+            <a href="#"><i class="ri-linkedin-fill"></i></a>
+          </div>
+          <span>or use your account</span>
+          <div class="form__group">
+            <input type="text" name="s_username" placeholder="Username" />
+          </div>
+          <div class="form__group">
+            <input type="password" name="s_password" placeholder="Password" />
+          </div>
+          <br>
+          <a href="#" class="forgot__password">Forgot your password?</a>
+          <button>SIGN IN</button>
+        </form>
+      </div>
+      <div class="overlay__container" id="overlayContainer">
+        <div class="overlay__wrapper">
+          <div class="overlay__panel overlay__panel__left">
+            <h1>Welcome Back!</h1>
+            <p>To keep connected with us please login with your personal info</p>
+            <p>Already Have an account ?</p>
+            <button>Sign In</button>
+          </div>
+          <div class="overlay__panel overlay__panel__right">
+            <h1>Hello, Friend!</h1>
+            <p>Enter your personal details and start journey with us</p>
+            <p>Don't have any Account?</p>
+            <button>Sign Up</button>
+          </div>
+        </div>
+        <button id="overlayBtn"></button>
+      </div>
+    </div>
+
+    <script>
+      const container = document.getElementById("container");
+      const overlayBtn = document.getElementById("overlayBtn");
+
+      overlayBtn.addEventListener("click", () => {
+        container.classList.toggle("right__panel__active");
+
+        overlayBtn.classList.remove("scale__btn-animation");
+        window.requestAnimationFrame(() => {
+          overlayBtn.classList.add("scale__btn-animation");
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+.btn {
+    border-radius: 0;
+    padding: 14px 38px;
+}
+
+.btn-brand1 {
+    color: #fff;
+    font-weight: 500;
+    border-color: #005e54;
+    background-color: #12c2b9;
+}
+
+.btn-brand1:hover {
+    border-color:  #12c2b9;
+    background-color: #ffffff;
+    color: #fff;
+}
+
+.bg-cover {
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+
+  .slide-1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.5)), url(./img/logodesign.png);
+  }
+  .slide-2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.5)), url(./img/diseases.jpg);
+  }
+  .slide-3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.5)), url(./img/doctor.jpg);
+  }
+  .slide-4 {
+    background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.5)), url(./img/diagosis.jpg);
+  }
+  .slide-5 {
+    background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.5)), url(./img/hospital.jpg);
+  }
+
+#heroSlider h6::after,
+#heroSlider h6::before {
+    content: " ";
+    width: 40px;
+    height: 4px;
+    background-color: #ffffff;
+    display: inline-block;
+    margin: 10px;
+    vertical-align: middle;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: rgba(0,0,0,0.6);
+    width: 40px;
+    height: 70px;
+    margin: auto;
+}
